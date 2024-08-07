@@ -3,9 +3,9 @@ import { isValidJSON } from "./isValidJSON";
 
 export const fetchData = async (
   dataModel: string,
-  defaultValue: string | number | boolean | [] | {}
+  defaultValue: string | number | boolean | [] | unknown = {}
 ) => {
-  let data = getUserData(dataModel);
+  const data = getUserData(dataModel);
 
   if (isValidJSON(data)) {
     return JSON.parse(data);

@@ -10,7 +10,7 @@ export class LMS {
   static connection = import.meta.env.MODE === "production" ? startLMS() : true;
 
   static userLocation: number;
-  static userData: {};
+  static userData: unknown = {};
 
   static getInstance() {
     if (!LMS.instance) {
