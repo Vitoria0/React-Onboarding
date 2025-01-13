@@ -54,10 +54,6 @@ const Module01Page04 = () => {
       doc.addImage(backgroundImage, "PNG", 0, 0, widthMm, heightMm);
 
       doc.setTextColor("#DA581E");
-      doc.setFontSize(40);
-      doc.text(studentName, 114 / 3.78, 380 / 3.78);
-
-      doc.setTextColor("#DA581E");
       doc.setFontSize(35);
       const today = new Date();
       const day = String(today.getDate()).padStart(2, "0");
