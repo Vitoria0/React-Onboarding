@@ -4,11 +4,9 @@ import { End } from "../../assets/svg/Files/end";
 import { Button } from "../../assets/svg/Files/button";
 import { jsPDF } from "jspdf";
 import certificado from "../Module01Page04/certificado.png";
-import { getStudentName } from "../../scorm/scorm-functions";
 const Module01Page04 = () => {
   const boxRef = useRef(null);
-  const [isInViewport, setIsInViewport] = useState(false);
-  const studentName = getStudentName();
+  const [isInViewport, setIsInViewport] = useState(false); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
