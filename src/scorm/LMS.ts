@@ -7,17 +7,17 @@ export class LMS {
   private static instance: LMS;
 
   static MAX_ATTEMPTS = 10;
-  static connection: boolean | undefined = false; // Default to false initially
+  static connection: boolean | undefined = true; // Default to false initially
 
   static userLocation: number;
   static userData: unknown = {};
 
   static async initialize() {
-    if (import.meta.env.MODE === "production") {
-      LMS.connection = await startLMS();
-    } else {
+    // if (import.meta.env.MODE === "production") {
+    //   LMS.connection = await startLMS();
+    // } else {
       LMS.connection = true;
-    }
+    // }
   }
 
   static getInstance() {
