@@ -93,7 +93,7 @@ const Home = () => {
               borderRadius: "99px",
             }}
           >
-            Lernify
+            Digital Conecta
           </Typography>
           <Typography variant="h2" color={"#191D20"} fontWeight={700}>
             Bem-vindo ao Futuro da Educação Corporativa!

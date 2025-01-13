@@ -23,10 +23,6 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
   const [shouldScrollOnLoad, setShouldScrollOnLoad] = useState(true);
   const userData = useSelector(selectUserData);
   const blockVideo = [...userData.blockVideo];
-  const block01 = userLocation > 9.9 && userLocation < 50;
-  const block04 = userLocation > 50 && userLocation < 69;
-  const block06 = userLocation > 69 && userLocation < 96;
-  const block08 = userLocation > 96;
   const [showBackTooltip, setShowBackTooltip] = useState(false);
   const [showHomeTooltip, setShowHomeTooltip] = useState(false);
   const customColors = ["#DA581E", "#FFFFFF", "#000000"];
@@ -144,7 +140,7 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
     if (layout) {
       const widthToScroll =
         window.innerWidth *
-        (block01 ? 3 : block04 ? 16 : block06 ? 21 : block08 ? 29 : 0);
+        ( 0);
       setTimeout(
         () =>
           layout.scrollTo({

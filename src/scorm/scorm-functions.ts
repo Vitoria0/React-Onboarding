@@ -5,7 +5,7 @@ export const startLMS = async () => {
     await pipwerks.SCORM.init();
     pipwerks.SCORM.set("cmi.core.score.min", "0");
     pipwerks.SCORM.set("cmi.core.score.max", "100");
-    return pipwerks.SCORM.connection.isActive;
+    return true;
   } catch (error) {
     console.error("Erro ao verificar se SCORM iniciou" + error);
   }

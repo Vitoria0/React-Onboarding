@@ -63,7 +63,7 @@ const Module01Page02 = () => {
           essa crença. Cada aprendizagem é cuidadosamente adaptada para atender
           às necessidades específicas de nossos clientes, oferecendo uma
           experiência de aprendizagem personalizada que impulsiona o crescimento
-          e a inovação. <strong> Assista o vídeo para saber mais: </strong>
+          e a inovação. <strong> Já pensou em ter videos personalizados? </strong>
         </Typography>
       </Box>
 
